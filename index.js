@@ -13,6 +13,6 @@ app.use('/api/users', usersRoutes)
 connectDb()
     .then(()=>{ 
         console.log('databse connection succeeded')
-        app.listen(3000, () => console.log("app started at 3000"));
+        app.listen(8080, () => console.log("app started at 3000"));
     })
     .catch(err => console.log(err))
